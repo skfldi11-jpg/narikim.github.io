@@ -1,51 +1,43 @@
 title: "Nari Kim"
+email: ""
 description: "Doctoral Candidate, Second Language Studies, Michigan State University"
-url: "https://YOUR_GITHUB_USERNAME.github.io"  # 나중에 실제 주소로 바꿔도 됨
-baseurl: ""                                   # 개인 사이트면 보통 빈 값
+url: "https://narikim.github.io"   # 본인 주소로 바꾸기
+baseurl: ""                         # 사용자 사이트면 보통 빈 값
 
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
 plugins:
   - jekyll-include-cache
 
-locale: en-US
-masthead_title: "Nari Kim"
+minimal_mistakes_skin: "default"  # "air", "contrast", "neon", "mint" 등도 가능
 
-# 상단 메뉴(Research/Service/Teaching 등) 활성화
-navigation: true
+# 상단 메뉴
+navigation:
+  - title: "Research"
+    url: /research/
+  - title: "Service"
+    url: /service/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Learning & Development"
+    url: /learning/
 
-# 사이드바 프로필(좌측)
+# 사이드바 프로필(왼쪽)
 author:
   name: "Nari Kim"
-  avatar: "/assets/images/avatar.jpg"   # 나중에 사진 넣기
+  avatar: "/assets/images/avatar.jpg"
   bio: "Doctoral Candidate<br/>Second Language Studies<br/>Michigan State University"
   location: "East Lansing, MI"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:YOUR_EMAIL@msu.edu"
+      url: "mailto:YOUR_EMAIL"
     - label: "Google Scholar"
-      icon: "fa fa-graduation-cap"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/"
     - label: "ORCID"
       icon: "fab fa-fw fa-orcid"
       url: "https://orcid.org/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/YOUR_GITHUB_USERNAME"
-
-# Minimal Mistakes 기본 설정
-minimal_mistakes_skin: "default"
-
-# “Research map 카드” 같은 커스텀 CSS 넣을 수 있게
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      classes: wide
-
-include:
-  - _pages
+      url: "https://github.com/narikim"
