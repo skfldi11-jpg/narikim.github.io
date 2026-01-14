@@ -1,0 +1,36 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minimal-mistakes";
+
+/* Custom components: research cards (inspired by common academic layouts) */
+.research-map__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin: 12px 0 28px;
+}
+
+.research-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 16px 16px 14px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+
+.research-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.research-card__highlights {
+  margin: 0 0 12px 18px;
+}
+
+.research-card__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
