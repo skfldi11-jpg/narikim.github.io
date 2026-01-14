@@ -1,58 +1,51 @@
 title: "Nari Kim"
-email: "YOUR_EMAIL"
-description: "Doctoral Candidate, Second Language Studies, Michigan State University."
-url: "https://narikim.github.io"
-baseurl: ""
+description: "Doctoral Candidate, Second Language Studies, Michigan State University"
+url: "https://YOUR_GITHUB_USERNAME.github.io"  # 나중에 실제 주소로 바꿔도 됨
+baseurl: ""                                   # 개인 사이트면 보통 빈 값
 
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
 plugins:
   - jekyll-include-cache
-  - jekyll-feed
 
-locale: "en-US"
+locale: en-US
+masthead_title: "Nari Kim"
 
-# Site author sidebar
+# 상단 메뉴(Research/Service/Teaching 등) 활성화
+navigation: true
+
+# 사이드바 프로필(좌측)
 author:
-  name   : "Nari Kim"
-  avatar : "/assets/images/avatar.jpg"
-  bio    : "Doctoral Candidate<br/>Second Language Studies<br/>Michigan State University"
+  name: "Nari Kim"
+  avatar: "/assets/images/avatar.jpg"   # 나중에 사진 넣기
+  bio: "Doctoral Candidate<br/>Second Language Studies<br/>Michigan State University"
   location: "East Lansing, MI"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:YOUR_EMAIL"
+      url: "mailto:YOUR_EMAIL@msu.edu"
     - label: "Google Scholar"
       icon: "fa fa-graduation-cap"
-      url: "YOUR_SCHOLAR_URL"
+      url: "https://scholar.google.com/"
     - label: "ORCID"
       icon: "fab fa-fw fa-orcid"
-      url: "https://orcid.org/YOUR_ORCID"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "YOUR_LINKEDIN_URL"
-    - label: "CV"
-      icon: "far fa-fw fa-file-alt"
-      url: "YOUR_CV_URL"
+      url: "https://orcid.org/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/YOUR_GITHUB_USERNAME"
 
-# Top navigation (Research dropdown 포함)
-navigation:
-  - title: "Research"
-    url: /research/
-    children:
-      - title: "Publications"
-        url: /publications/
-      - title: "Projects"
-        url: /projects/
-  - title: "Service"
-    url: /service/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "Learning & Development"
-    url: /learning/
+# Minimal Mistakes 기본 설정
+minimal_mistakes_skin: "default"
 
-# Defaults
+# “Research map 카드” 같은 커스텀 CSS 넣을 수 있게
 defaults:
   - scope:
       path: ""
       type: pages
+    values:
+      layout: single
+      author_profile: true
+      classes: wide
+
+include:
+  - _pages
