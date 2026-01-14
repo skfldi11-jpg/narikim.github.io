@@ -41,4 +41,24 @@ I am a doctoral candidate in Second Language Studies at Michigan State Universit
   <div class="research-group">
     <h3><span class="pill">B</span> Generative AI in Language Education</h3>
     <div class="cards">
-      <div class="c
+      <div class="card">
+        <h4>Critical AI Literacy</h4>
+        <ul>
+          <li>Equity, access, and algorithmic bias</li>
+          <li>Teacher educators in Global South contexts</li>
+        </ul>
+        <a href="/research/">Explore</a>
+      </div>
+
+      <div class="card">
+        <h4>AI-Mediated Pedagogy</h4>
+        <ul>
+          <li>Classroom integration and ethics</li>
+          <li>Teacher decision-making</li>
+        </ul>
+        <a href="/research/">Explore</a>
+      </div>
+    </div>
+  </div>
+
+</div>
